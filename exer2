@@ -1,0 +1,18 @@
+#include<stdio.h>
+const int N = 7;
+int main(){
+  int i, somaIndPar, somaIndImpar = 0,
+	  num [N] = {10, -5, 185};
+  for ( i = 0; i < N; i++){
+  	if(i % 2 == 0)
+  	 somaIndPar += num[i];
+  	else
+  	  somaIndImpar += num [i];
+  }
+  printf("valores do vetor: \n");
+  for (i = 0; i < N; i ++){
+  	printf("\nPosicao %d = %3d", i, num [i]);
+  }
+  printf("\n\nSoma dos valores nos indices pares: %d", somaIndPar);
+   printf("\n\nSoma dos valores nos indices impares: %d", somaIndImpar);
+}
